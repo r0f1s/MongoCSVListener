@@ -1,3 +1,7 @@
+This is designed for Linux/Unix systems. It monitors the installation directory for files with a '.csv'
+and inserts them into a mongoDB database called "listener" with the collection name that matches the file,
+without the extension.
+
 To compile, first make sure you have the inotify headers and that they're in the correct location:
 sudo mv inotify.h /usr/include/sys/
 sudo mv inotify-syscalls.h /usr/include/sys/
